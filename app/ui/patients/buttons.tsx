@@ -3,12 +3,12 @@ import {
   PlusIcon,
   ArrowUpOnSquareIcon,
   PencilSquareIcon,
-  TrashIcon
+  TrashIcon,
 } from '@heroicons/react/24/outline';
 
-export function CreatePatient() {
+export function CreatePatient({ onOpen }: { onOpen: () => void }) {
   return (
-    <Button>
+    <Button onClick={onOpen}>
       <PlusIcon className="mr-1 h-4 w-4" /> ADD NEW PATIENT
     </Button>
   );

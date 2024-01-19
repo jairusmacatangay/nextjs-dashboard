@@ -1,9 +1,10 @@
 import { UserPlusIcon } from '@heroicons/react/24/outline';
-import { CreatePatient, Export } from '@/app/ui/patients/buttons';
+import { Export } from '@/app/ui/patients/buttons';
 import { Filters } from '@/app/ui/patients/filters';
 import { Search } from '@/app/ui/patients/search';
 import { Table } from '@/app/ui/patients/table';
 import { Pagination } from '@/app/ui/patients/pagination';
+import CreateModal from '@/app/ui/patients/create-modal';
 
 export default function Page() {
   return (
@@ -14,7 +15,7 @@ export default function Page() {
           <p>Patients</p>
         </div>
 
-        <CreatePatient />
+        <CreateModal />
       </div>
 
       <div className="mt-8 flex items-center justify-between">
